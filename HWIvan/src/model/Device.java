@@ -1,12 +1,12 @@
 package model;
 
-public abstract class Item {
+public abstract class Device {
     private final double width;
     private final double length;
     private final double height;
     private final double weight;
 
-    Item(double width, double length, double height, double weight) {
+    Device(double width, double length, double height, double weight) {
         this.width = width;
         this.length = length;
         this.height = height;

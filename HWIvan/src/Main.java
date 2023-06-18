@@ -26,7 +26,7 @@ public class Main {
      * @param supplier Supplier to create new instances of a specific item.
      * @param message Prompt message to ask for item quantity.
      */
-    private static void addItems(Calculations calculation, Scanner scanner, Supplier<Item> supplier, String message) {
+    private static void addItems(Calculations calculation, Scanner scanner, Supplier<Device> supplier, String message) {
         System.out.print(message);
         int count = getValidInt(scanner);
         for (int i = 0; i < count; i++) {

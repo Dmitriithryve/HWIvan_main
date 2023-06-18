@@ -1,7 +1,7 @@
 package service;
 
 import model.Container;
-import model.Item;
+import model.Device;
 import model.SmallContainer;
 import model.BigContainer;
 
@@ -9,26 +9,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Calculations {
-    private final List<Item> items;
+    private final List<Device> devices;
     private final SmallContainer smallContainer;
     private final BigContainer bigContainer;
 
     public Calculations() {
-        items = new ArrayList<>();
+        devices = new ArrayList<>();
         smallContainer = new SmallContainer();
         bigContainer = new BigContainer();
     }
 
-    public void addItem(Item item) {
-        items.add(item);
+    public void addItem(Device device) {
+        devices.add(device);
     }
 
     double calculateTotalWeight() {
-        return items.stream().mapToDouble(Item::getWeight).sum();
+        return devices.stream().mapToDouble(Device::getWeight).sum();
     }
 
     double calculateTotalVolume() {
-        return items.stream().mapToDouble(Item::calculateVolume).sum();
+        return devices.stream().mapToDouble(Device::calculateVolume).sum();
     }
 
     public void calculateContainers() {

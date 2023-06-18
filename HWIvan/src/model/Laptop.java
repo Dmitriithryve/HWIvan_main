@@ -1,6 +1,6 @@
 package model;
 
-public class Laptop extends Item {
+public class Laptop extends Device {
     public Laptop() {
         super(0.6, 0.5, 0.5, 6.5);
     }
